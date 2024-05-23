@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gguf_vocab"
+version = "0.1.0"
+description = "Extract the vocabulary of a model from its gguf file"
+authors = ["Andrew Spott <andrew.spott@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gguf = "^0.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gguf_vocab = "gguf_vocab.main:main"
